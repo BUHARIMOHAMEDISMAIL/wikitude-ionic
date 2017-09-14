@@ -1,0 +1,12 @@
+<ion-view>
+	<ion-content>
+		<div class="barakah-logo"><h3>Barakah</h3></div>
+		<div class="barakah-signup-section">
+			<input type="text" class="barakah-input-field" placeholder="name" ng-model="signup.username"/>
+			<input type="text" class="barakah-input-field" placeholder="mail-id" ng-model="signup.email"/>
+			<input type="text" class="barakah-input-field" placeholder="password" ng-model="signup.password"/>
+			<button class="button button-positive button-block barak-signup-btn" ng-click="signupdata(signup)">Signup</button>
+		</div>
+		<div class="signup" ui-sref="login">You already have an account click here to Login</div>
+	</ion-content>
+</ion-view>

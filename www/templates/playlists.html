@@ -1,0 +1,21 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+<div class="">
+      <ion-item ng-repeat="check in checking">
+        {{check.name}}
+      </ion-item>
+</div>
+<div class="dummyform">
+  <input type="text" ng-model="dmcnt.name">
+  <input type="number" ng-model="dmcnt.age">
+  <input type="status" ng-model="dmcnt.status">
+  <button ng-click="submt(dmcnt)">Sent</button>
+  <button ng-click="lgnchckup(dmcnt)"></button>
+</div>
+  </ion-content>
+</ion-view>

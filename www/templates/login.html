@@ -1,0 +1,13 @@
+<ion-modal-view>
+  <ion-content>
+    <div class="barakah-logo"><h3>DIP</h3></div>
+      <div class="barakah-signup-section">
+        <input type="text" class="barakah-input-field" placeholder="Username" ng-model="loginData.username"/>
+        <input type="text" class="barakah-input-field" placeholder="Password" ng-model="loginData.password"/>
+        <button class="button button-positive button-block barak-signup-btn" ng-click="signin(loginData)">Login</button>
+        <button class="button button-positive button-block barak-signup-btn" ng-click="dip()">DIPTEST</button>
+        <button class="button button-positive button-block barak-signup-btn" ng-click="ar()">ARTEST</button>
+      </div>
+      <div class="signup" ui-sref="signup">You don't have an account click here to Signup</div>
+  </ion-content>
+</ion-modal-view>

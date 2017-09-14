@@ -1,0 +1,24 @@
+<ion-view title="Home">
+    <ion-content>
+        <div class="home">
+            <h3 class="driver-head">Enter the name of the driver:</h3>
+            <div class="serach-driver">
+                <input type="text" gm-places-autocomplete />
+                <input type="text" id="Autocomplete" class="form-control" ng-autocomplete="result2" details="details2" options="options2"/>
+            </div>
+            <div class="maploc" id="map">
+            </div>
+            <div class="list card" ng-repeat="driver in drivers | filter:serachdriver">
+                <div class="item item-avatar cust-avatar">
+                    <img ng-src="{{baseurl}}{{driver.prflimgurl}}">
+                    <h2>{{driver.firstname}} {{driver.lastname}}</h2>
+                    <p>{{driver.address}}</p>
+                    <p>{{driver.phonenumber}}</p>
+                    <button class="button button-small button-calm driver-detail" ng-click="driverdetail(driver)">detail</button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
+

@@ -1,0 +1,14 @@
+<ion-view title="Book driver">
+    <ion-content>
+        <img src="{{baseurl}}{{bookdriverdata.prflimgurl}}">
+    <h3>{{bookdriverdata.firstname}} {{bookdriverdata.lastname}}</h3>
+    <h4>{{bookdriverdata.phonenumber}}</h4>
+    <h5>{{bookdriverdata.driverstand}}</h5>
+    <h6>{{bookdriverdata.address}}</h6>
+    <h3>Starting point</h3>
+    <input type="text" placeholder="enter starting point" ng-model="startpoint" gm-places-autocomplete />
+    <h3>Destination point</h3>
+    <input type="text" placeholder="enter destination" ng-model="destination" gm-places-autocomplete />
+    <button class="button button-small button-calm driver-detail" ng-click="bookdriver(bookdriverdata, startpoint, destination)">book driver</button>
+    </ion-content>
+</ion-view>

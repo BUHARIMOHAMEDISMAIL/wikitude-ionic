@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- AR CSS -->
+    <link rel="stylesheet" href="css/default.css">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic map -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=&v=3.0&sensor=true"></script>-->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&dummy=.js"></script>
+
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="lib/ng-cordova/dist/ng-cordova.js"></script>
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/angulargooglemap.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+
+    <!-- AR JS-->
+    <!--<script src="https://www.wikitude.com/libs/architect.js"></script>-->
+	  <script src="js/wikiade.js"></script>
+    <!--<script src="js/wikiimageontarget.js"></script>-->
+
+    <!-- service -->
+    <script src="js/service.js"></script>
+    <!--controller -->
+    <script src="js/signupctrl.js"></script>
+    <script src="js/testingctrl.js"></script>
+    <script src="js/loginctrl.js"></script>
+    <script src="js/profilectrl.js"></script>
+    <script src="js/homectrl.js"></script>
+    <script src="js/driverctrl.js"></script>
+    <script src="js/bookdriverctrl.js"></script>
+    <script src="js/diptestCtrl.js"></script>
+    <script src="js/artestCtrl.js"></script>
+    
+  </head>
+
+  <body ng-app="starter">
+    <ion-nav-view></ion-nav-view>
+  </body>
+  <!--<script src="https://maps.googleapis.com/maps/api/js?key=&v=3.0&sensor=true"></script>-->
+</html>
